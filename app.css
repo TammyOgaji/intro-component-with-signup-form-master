@@ -1,0 +1,10 @@
+body{
+    font-family: 'Poppins','Open Sans', sans-serif;
+    background-color: hsl(0, 100%, 74%);
+}
+.actionBtn{
+    background-color: hsl(248, 32%, 49%);
+}
+.ctaButton{
+    background-color: hsl(154, 59%, 51%);
+}
