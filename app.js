@@ -100,21 +100,6 @@ const inputs = {
 
 
 
-// function inputType(inp,errMsg){
-//     if(inp.value === ""){
-//         inp.classList.add('.is-invalid')
-//         inp.insertAdjacentHTML("afterend","<p class='invalid-feedback'>"+errMsg+"</p>")
-//         inp.classList.remove();
-//     }
-//     else{
-//         inp.classList.add('.is-valid')
-//         inp.insertAdjacentHTML("afterend", "<p class= 'valid-feedback'>Looks good!</p>")
-//         inp.nextSiblingElement.remove();
-//     }
-// }
-
-
-
 
 
 
