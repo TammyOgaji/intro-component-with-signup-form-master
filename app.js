@@ -108,11 +108,12 @@ claimBtn.addEventListener('click', function(e){
     e.preventDefault();
     if(firstName.value === ""){
         firstName.classList.add('.is-invalid')
-        firstName.insertAdjacentHTML("afterend","<p class='invalid feedback'>First Name cannot be empty</p>")
+        firstName.insertAdjacentHTML("afterend","<p class='invalid-feedback'>First Name cannot be empty</p>")
     }
     else{
+        firstName.classList.remove('.is-invalid')
         firstName.classList.add('.is-valid')
-        firstName.insertAdjacentHTML("afterend", "<p class= 'valid feedback'>Looks good!</p>")
+        firstName.insertAdjacentHTML("afterend", "<p class= 'valid-feedback'>Looks good!</p>")
     }
 })
 
