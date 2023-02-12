@@ -2,8 +2,22 @@ body{
     font-family: 'Poppins','Open Sans', sans-serif;
     background-color: hsl(0, 100%, 74%);
     background-image: url('./images/bg-intro-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.actionBtn{
+
+#contentContainer{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background-color: white;
+    padding: 2rem;
+}
+/* .actionBtn{
     background-color: hsl(248, 32%, 49%);
 }
 .ctaButton{
@@ -14,4 +28,4 @@ body{
     font-size: 12px;
     padding-top: 1rem;
     color: hsl(246, 25%, 77%);
-}
+} */

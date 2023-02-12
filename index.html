@@ -11,48 +11,57 @@
     <link rel="stylesheet" href="app.css">
   </head>
   <body>
-    <div class="container text-center mt-5">
-
-      <div class="row align-items-center">
-
-        <div class="col text-white">
-          <h1 class="py-3">Learn to code by watching others
-          </h1>
-          <p>
-            See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable. 
-          </p>
+    <div class="container text-center">
+      <div class="row" id="contentContainer">
+        <!-- this col holds the written content -->
+        <div class="col">
+          <h1>Learn to code by watching others</h1>
+          <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but understanding how developers think is invaluable</p>
         </div>
 
-
-
+        <!-- second col, this holds the form & buttons -->
         <div class="col">
-          <a href="#" class="btn actionBtn py-3 rounded w-100 px-5 btn-primary">  Try it free 7 days then $20/mo. thereafter
-          </a>
-          <div class="card justify-content-center px-5 py-5  h-100 mt-4 p-2" id="form">
-            <input type="text" class="form-control mb-3" id="firstName" name="firstName" placeholder="First Name">
-            <input type="text" class="form-control mb-3" id="lastName" id="lastName" placeholder="Last Name">  
-            <input type="email" class="form-control mb-3" id="email" name="email" placeholder="Email Address">
-            <input type="password" class="form-control mb-3" id="password" name="password" placeholder="Password">
-            <a href="#" class="btn ctaButton py-2 px-5 btn-success">  Claim your free trial 
-            </a>
-            <span class="termsOfService">  By clicking the button, you are agreeing to our <a href="#" class="text-danger">Terms and Services</a> 
-            </span>
-          </div>
+          <button>Try it free 7 days then $20/mo. thereafter</button>
+          <form action="#" class="needs-validation" novalidate>
+            <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="First name" aria-label="First name" required>
+                  <label for="floatingInput">First Name</label>
+                  <div class="invalid-feedback">
+                    First Name cannot be empty
+                  </div>
+
+            </div>
+            <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Last name" aria-label="Last name" required>
+                  <label for="floatingInput">Last Name</label>
+                  <div class="invalid-feedback">
+                    Last Name cannot be empty
+                  </div>
+
+            </div>
+            <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="Email Address" aria-label="Email Address" required>
+                  <label for="floatingInput">Email Address</label>
+                  <div class="invalid-feedback">
+                    Looks like this is not an email?
+                  </div>
+
+            </div>
+            <div class="form-floating mb-3">
+                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password" aria-label="Password" required>
+                  <label for="floatingPassword">Password</label>
+                  <div class="invalid-feedback">
+                    Password cannot be empty
+                  </div>
+
+            </div>
+            <button type="submit">CLAIM YOUR FREE TRIAL</button>
+            <p>By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
+          </form>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
