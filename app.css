@@ -1,31 +1,49 @@
+:root{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
 body{
     font-family: 'Poppins','Open Sans', sans-serif;
-    background-color: hsl(0, 100%, 74%);
+    background-color: var(--Red);
     background-image: url('./images/bg-intro-desktop.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
 #contentContainer{
-    margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+#displayMsg {
+    text-align: start;
+}
+#displayMsg h1{
+    font-weight: 700;
+    margin: 1.3rem 0;
+}
+
+.tryBtn{
+    background-color: var(--Blue);
+}
 form{
     background-color: white;
     padding: 2rem;
 }
-/* .actionBtn{
-    background-color: hsl(248, 32%, 49%);
-}
-.ctaButton{
-    background-color: hsl(154, 59%, 51%);
-}
 
-.termsOfService{
-    font-size: 12px;
-    padding-top: 1rem;
-    color: hsl(246, 25%, 77%);
-} */
+.ctaButton{
+    background-color: var(--Green);
+}
