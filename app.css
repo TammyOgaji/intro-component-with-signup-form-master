@@ -30,15 +30,24 @@ body{
 
 #displayMsg {
     text-align: start;
+    padding: 5rem;
 }
 #displayMsg h1{
     font-weight: 700;
+    font-size: 3rem;
     margin: 1.3rem 0;
 }
 
 .tryBtn{
     background-color: var(--Blue);
+    box-shadow: 1px 10px 5px rgba(92, 91, 91, 0.358);
 }
+.tryBtn:hover{
+    background-color: var(--Blue);
+    opacity: 0.9;
+    transition: ease-in-out 1s;
+}
+
 form{
     background-color: white;
     padding: 2rem;
@@ -46,4 +55,12 @@ form{
 
 .ctaButton{
     background-color: var(--Green);
+}
+.ctaButton:hover{
+    background-color: var(--Green);
+    opacity: 0.8;
+}
+
+.termsOfService{
+    font-size: 12px;
 }
